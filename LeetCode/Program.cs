@@ -11,7 +11,7 @@ namespace ConsoleMain
     class ConsoleMain
     {
         /// <summary>
-        /// ConsoleAPP Ana Fonksiyon
+        /// ConsoleAPP Main Func
         /// </summary>
         public static void Main()
         {
@@ -22,7 +22,8 @@ namespace ConsoleMain
                 $"{Environment.NewLine}4 - Squares Of A Sorted Array" +
                 $"{Environment.NewLine}5 - Rotate Array" + $"{Environment.NewLine}6 - Move Zeroes" + $"{Environment.NewLine}7 - Two Sum 2" +
                 $"{Environment.NewLine}8 - Reverse String" + $"{Environment.NewLine}9 - Reverse Words In A String III" + $"{Environment.NewLine}10 - Palindrome Number" +
-                $"{Environment.NewLine}11 - Reverse Integer" + $"{Environment.NewLine}12 - Longest Substring Without Repeating Characters"
+                $"{Environment.NewLine}11 - Reverse Integer" + $"{Environment.NewLine}12 - Longest Substring Without Repeating Characters" + $"{Environment.NewLine}13 - Permutation In String" +
+                $"{Environment.NewLine}14 - Binary Tree Inorder Traversal" + $"{Environment.NewLine}15 - Maximum Depth of Binary Tree" + $"{Environment.NewLine}16 - Maximum Width of Binary Tree"
                 );
 
             string? mainReply = Console.ReadLine();
@@ -51,6 +52,14 @@ namespace ConsoleMain
                 new Q7ReverseInteger().Solution();
             else if (mainReply == "12")
                 new Q3LongestSubstringWithoutRepeatingCharacters().Solution();
+            else if (mainReply == "13")
+                new Q567PermutationInString().Solution();
+            else if (mainReply == "14")
+                new Q94BinaryTreeInorderTraversal().Solution();
+            else if (mainReply == "15")
+                new Q104MaximumDepthOfBinaryTree().Solution();
+            else if (mainReply == "16")
+                new Q662MaximumWidthOfBinaryTree().Solution();
         }
     }
 }
