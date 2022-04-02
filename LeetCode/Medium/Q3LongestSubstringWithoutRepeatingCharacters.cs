@@ -34,7 +34,6 @@ namespace LeetCode.Medium
                     currentMaxString = new string(charsToReturn.ToArray());
                 ptr++;
             }
-
             return currentMaxString.Length;
         }
     }
